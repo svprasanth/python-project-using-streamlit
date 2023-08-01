@@ -5,7 +5,7 @@ import openpyxl
 import matplotlib.pyplot as plt
 import numpy as np
 st.set_page_config(page_title='Kcc Sales Dashboard', layout='wide', page_icon=":bar_chart:")
-data = pd.read_excel("G:\\tableau\\machinelearning\\kcc sales data.xlsx", sheet_name="Data")
+data = pd.read_excel("kcc sales data.xlsx", sheet_name="Data")
 data['year'] = pd.DatetimeIndex(data['Date']).year
 data['year'] = data['year'].apply(str)
 
